@@ -32,7 +32,10 @@ namespace Palindromic
             DateTime testDateStop = new DateTime(2000, 1, 1);
             Printer.PrintDate(testDateStop);
             DateLogic.SetStopDate(testDateStop);
+
             DateLogic.Traverse();
+
+            DateLogic.ListPalindromes();
 
             Console.ReadLine();
         }
