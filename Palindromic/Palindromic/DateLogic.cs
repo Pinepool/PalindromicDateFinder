@@ -32,9 +32,19 @@ namespace Palindromic
             }
         }
 
+        public static void SetStartDate(DateTime newStartDate)
+        {
+            start = new DateTime(newStartDate.Year, newStartDate.Month, newStartDate.Day);
+        }
+
+        public static void SetStartDate()
+        {
+            start = new DateTime(0);
+            SetStartDate(start);
+        }
+
         public static void SetStopDate(DateTime newStopDate)
         {
-            Printer.PrintDate(newStopDate);
             stop = new DateTime(newStopDate.Year, newStopDate.Month, newStopDate.Day);
         }
     }
